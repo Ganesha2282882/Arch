@@ -10,4 +10,5 @@ chmod +x install.sh
 ./install.sh
 ```
 Login: arch
+
 Password: arch
