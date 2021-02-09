@@ -1,6 +1,7 @@
 # Arch
 A Arch install script
 ```
+pacman -S git
 fdisk -l
 cfdisk /dev/sdX
 mount /dev/sdXX /mnt
