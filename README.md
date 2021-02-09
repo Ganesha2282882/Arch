@@ -1,7 +1,7 @@
 # Arch
 A Arch install script
 ```
-pacman -S git
+pacman -Sy git
 fdisk -l
 dd if=/dev/zero of=/dev/sdX bs=1M count=16
 cfdisk /dev/sdX
