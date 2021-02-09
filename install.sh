@@ -8,5 +8,5 @@ pacstrap /mnt base linux
 genfstab /mnt > /mnt/etc/fstab
 arch-chroot /mnt /bin/bash -c "pacman -S nano sudo networkmanager grub; echo '%sudo	ALL=(ALL) ALL' > /etc/sudoers; useradd arch; groupadd sudo; usermod -aG sudo arch; mkdir -p /home/arch; chown arch:arch /home/arch --recursive; echo 'arch:arch' | chpasswd; mkdir -p /boot/grub; grub-mkconfig -o /boot/grub/grub.cfg"
 yes | pacman -Sy grub
-grub-install /dev/sda
+grub-install /disk
 echo "done! time to reboot!"
